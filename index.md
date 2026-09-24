@@ -1,6 +1,5 @@
 ---
 title: "Документы AI Storyteller"
-permalink: /
 lang: ru
 ---
 
@@ -11,15 +10,15 @@ Google Play: `com.unil.aistoryteller`
 
 ## Русский
 
-- [Политика конфиденциальности](/privacy/)
-- [Пользовательское соглашение](/terms/)
-- [Удаление аккаунта и данных](/delete-account/)
+- [Политика конфиденциальности]({{ '/privacy/' | relative_url }})
+- [Пользовательское соглашение]({{ '/terms/' | relative_url }})
+- [Удаление аккаунта и данных]({{ '/delete-account/' | relative_url }})
 
 ## English
 
-- [Privacy Policy](/privacy/en/)
-- [Terms of Service](/terms/en/)
-- [Account and Data Deletion](/delete-account/en/)
+- [Privacy Policy]({{ '/privacy/en/' | relative_url }})
+- [Terms of Service]({{ '/terms/en/' | relative_url }})
+- [Account and Data Deletion]({{ '/delete-account/en/' | relative_url }})
 
 ---
 
