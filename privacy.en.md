@@ -7,9 +7,9 @@ altLabel: Русский
 ---
 # Privacy Policy
 
-**App:** AI Storyteller / Fairytale Gardens
-**Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova
-**Data contact:** aistoryteller.team@gmail.com
+**App:** AI Storyteller / Fairytale Gardens  
+**Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
+**Data contact:** aistoryteller.team@gmail.com  
 **Effective date:** 2026-08-31
 
 ## 1. Who and why
@@ -91,9 +91,16 @@ work offline; it is size-limited, cleaned automatically as it fills up, and
 removed entirely when you uninstall the app or reset data in settings.
 
 ## 4.1. Transfers outside the Republic of Moldova
-Some of our providers (Supabase, Groq, Cloudflare, Together AI, Google,
-ElevenLabs, Resend, Sentry) run servers in the European Union, the United States
-and other countries. This means **cross-border data transfers**.
+Some of our providers (Supabase, Groq, Cloudflare, Google, ElevenLabs,
+Yandex Cloud, Resend, Sentry) run servers in the European Union, the United
+States, Russia and other countries. This means **cross-border data transfers**.
+
+A separate warning about narration: cloud speech synthesis is performed by
+**Yandex Cloud (Yandex SpeechKit)**, whose servers are located in Russia, and it
+receives **the full text of the story** — which may contain the child's name if
+the story is about them. Narration only starts when you ask for it: without
+tapping the button nothing is sent, and you can read the story or listen to it
+in the device's own voice without this transfer.
 
 We keep what is transferred to a minimum: third-party AI services receive only
 the request and scene text — no email address, no device identifier, and no link
@@ -106,14 +113,28 @@ Articles 32-33 of Law No. 133/2011 of the Republic of Moldova.
 To run the App we send the **request/scene text** (without name or contacts, and
 without linking to the child's identity beyond what is necessary) to third-party
 AI services:
-- **Text generation:** Groq (and, if connected, other LLM providers).
-- **Illustration generation:** Cloudflare Workers AI, Together AI,
-  Google (Gemini) — subject to availability.
-- **Narration (optional):** cloud speech synthesis.
-- **Infrastructure/authentication/storage:** Supabase.
-- **Payments and distribution:** Google Play (Google).
-Each service processes data under its own privacy policy. We try not to pass them
-direct identity identifiers.
+- **Text generation:** Groq — [policy](https://groq.com/privacy-policy/).
+- **Illustration generation:** Cloudflare Workers AI —
+  [policy](https://www.cloudflare.com/privacypolicy/).
+- **Cloud narration (only when you ask for it):** Yandex Cloud, SpeechKit —
+  [policy](https://yandex.cloud/en/docs/legal/confidential), servers in Russia.
+  Receives the full story text, including the hero's name.
+- **Parent-voice narration (only when you ask for it, if enabled):** ElevenLabs —
+  [policy](https://elevenlabs.io/privacy-policy). Receives an adult's voice
+  sample and the story text.
+- **Infrastructure, authentication, storage:** Supabase —
+  [policy](https://supabase.com/privacy).
+- **Crash reporting:** Sentry — [policy](https://sentry.io/privacy/).
+- **Support email:** Resend — [policy](https://resend.com/legal/privacy-policy).
+- **Payments and distribution:** Google Play (Google) —
+  [policy](https://policies.google.com/privacy).
+
+Each service processes data under its own privacy policy and terms of use; the
+links above lead to them. We try not to pass these services direct identity
+identifiers: we do not send them your email, device identifier or account data.
+
+This list can change: if we add another provider or drop a current one, we will
+update this section and the effective date at the top of the document.
 
 ## 6. Legal bases
 The controller is located in the Republic of Moldova, and processing is carried

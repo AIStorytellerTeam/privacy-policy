@@ -7,9 +7,9 @@ altLabel: Русский
 ---
 # Account and Data Deletion
 
-**App:** AI Storyteller / Fairytale Gardens
-**Google Play package:** com.unil.aistoryteller
-**Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova
+**App:** AI Storyteller / Fairytale Gardens  
+**Google Play package:** com.unil.aistoryteller  
+**Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Contact:** aistoryteller.team@gmail.com
 
 ## 1. Deleting your account inside the app
@@ -18,9 +18,10 @@ This is the fastest way — deletion happens immediately.
 - Open the app and sign in to your account.
 - Go to the **"Parents"** section (enter your PIN if one is set).
 - Open **"Settings" → "Reset data"**.
-- Choose **"Delete everything"** if you are the family owner, or **"Delete only
+- Choose **"Delete all data"** if you are the family owner, or **"Delete only
   my data"** if you joined a family with an invite code.
-- Confirm. The action cannot be undone.
+- Confirm. The family owner is asked twice and shown how many child profiles and
+  relatives' accounts will be deleted. Once confirmed, the action cannot be undone.
 
 ## 2. Deleting your account without the app
 If you have already uninstalled the app, email us from the address your account
@@ -42,7 +43,7 @@ Permanently and completely:
 - family settings, invite code, the parent-section PIN;
 - the recorded voice sample, if there was one.
 
-If you are the family owner and chose "Delete everything", the accounts of
+If you are the family owner and chose "Delete all data", the accounts of
 relatives who joined your family with the invite code are deleted as well.
 
 ## 4. What is kept, and for how long

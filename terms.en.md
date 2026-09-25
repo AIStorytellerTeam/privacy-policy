@@ -7,9 +7,9 @@ altLabel: Русский
 ---
 # Terms of Service
 
-**App:** AI Storyteller / Fairytale Gardens (the "App")
-**Rights holder:** Turlaeva Elena Vladimirovna, Republic of Moldova
-**Contact:** aistoryteller.team@gmail.com
+**App:** AI Storyteller / Fairytale Gardens (the "App")  
+**Rights holder:** Turlaeva Elena Vladimirovna, Republic of Moldova  
+**Contact:** aistoryteller.team@gmail.com  
 **Effective date:** 2026-08-31
 
 ## 1. General
