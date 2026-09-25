@@ -37,8 +37,10 @@ running subscriptions.
   you can return to them.
 - **Technical data:** generation logs (time, plan, success/error status, which
   service handled it) — for limits, abuse prevention, and aggregated analytics.
-- **Device identifier:** the identifier the operating system assigns to our app
-  (ANDROID_ID on Android, identifierForVendor on iOS) and its hash. It is used
+- **Device identifier:** only a one-way hash of the identifier the operating
+  system assigns to our app (ANDROID_ID on Android, identifierForVendor on iOS).
+  The identifier itself is never transmitted or stored — only the hash is matched
+  on the server. It is used
   for one purpose only — to prevent creating an unlimited number of accounts on
   a single phone to bypass the free limits. This is **not** a hardware number:
   it is app-specific, resets when the device is factory reset, and cannot be
