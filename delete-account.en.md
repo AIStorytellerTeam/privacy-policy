@@ -33,7 +33,25 @@ We reply within 30 days. We cannot act on a request sent from a different
 address — it is the only way available to us to confirm the request comes from
 you and not from someone else.
 
-## 3. What is deleted
+## 3. Deleting some of your data without deleting the account
+You do not have to erase everything — you can remove just what you need and keep
+using the app:
+
+- **A single story.** Open it and choose "Delete story". Its illustrations and
+  narration go with it. A story can be deleted by the person who created it.
+- **A child's profile.** "Parents → Children" → open the profile and delete it.
+  The child's stories, skills and progress are removed with it.
+- **Your own data, if you joined a family with a code.** "Parents → Settings →
+  Reset data → Delete only my data". Your account leaves the family; the stories
+  and children stay with the other relatives.
+- **A relative in the family.** The family owner can remove a member: "Parents →
+  Settings", the "Remove" button next to their name. The removed person keeps
+  their account and only loses access to the family.
+
+If you cannot find the action you need in the app, write to
+**aistoryteller.team@gmail.com** and tell us what to delete.
+
+## 4. What is deleted when you delete everything
 Permanently and completely:
 
 - the adult account and sign-in record (email, Google link);
@@ -46,7 +64,7 @@ Permanently and completely:
 If you are the family owner and chose "Delete all data", the accounts of
 relatives who joined your family with the invite code are deleted as well.
 
-## 4. What is kept, and for how long
+## 5. What is kept, and for how long
 - **On-device data** — sign-in tokens, the PIN hash, settings and the
   illustration cache — is removed when you uninstall the app or reset data.
 - **Database backups** held by our hosting provider (Supabase) are kept for a
@@ -59,10 +77,10 @@ relatives who joined your family with the invite code are deleted as well.
   names and no content) may be retained for diagnostics; after your account is
   deleted they cannot be linked back to you.
 
-## 5. Your other rights
+## 6. Your other rights
 Besides deletion you may request a copy of your data, correction of inaccuracies
 or restriction of processing. Write to the same address —
 **aistoryteller.team@gmail.com**.
 
 For details on what we collect and why, see the
-[Privacy Policy](./privacy.html).
+[Privacy Policy](../privacy/en/).
