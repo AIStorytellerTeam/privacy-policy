@@ -55,7 +55,7 @@ If you cannot find the action you need in the app, write to
 Permanently and completely:
 
 - the adult account and sign-in record (email, Google link);
-- child profiles: name, date of birth, gender, avatar, selected skills, progress;
+- child profiles: name, gender, avatar, selected skills, progress;
 - all created stories — texts, illustrations and narration files;
 - bookmarks, favourites and reading history;
 - family settings, invite code, the parent-section PIN;
@@ -77,9 +77,23 @@ relatives who joined your family with the invite code are deleted as well.
   names and no content) may be retained for diagnostics; after your account is
   deleted they cannot be linked back to you.
 
-## 6. Your other rights
-Besides deletion you may request a copy of your data, correction of inaccuracies
-or restriction of processing. Write to the same address —
+## 6. Taking your data with you before deletion
+Deletion cannot be undone, so it is worth saving what matters first. The app
+has a button for it: "Parents → Settings → My data".
+
+The export is produced on the device in two formats: **PDF**, to read through
+and print, and **JSON**, machine-readable, so you can move the data to another
+service (the right to portability, Art. 20 GDPR). It contains child profiles,
+every story with its full text, selected skills, completion marks, awards, the
+family roster and plan details.
+
+Deliberately excluded: the PIN hash, sign-in tokens and purchase tokens — these
+are access keys, not information about you. Illustration and narration files
+are not bundled because of their size.
+
+## 7. Your other rights
+Besides deletion and a copy of your data, you may request correction of
+inaccuracies or restriction of processing. Write to the same address —
 **aistoryteller.team@gmail.com**.
 
 For details on what we collect and why, see the

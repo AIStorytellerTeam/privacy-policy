@@ -10,7 +10,7 @@ altLabel: Русский
 **App:** AI Storyteller / Fairytale Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
-**Effective date:** 2026-08-31
+**Effective date:** 2026-09-28
 
 ## 1. Who and why
 The account is created by an **adult** (parent/guardian). We process the minimum
@@ -30,23 +30,35 @@ running subscriptions.
   **operating system itself**. The App only receives a "confirmed / not
   confirmed" answer; biometric data never leaves the device and is never sent
   to us.
-- **Family and children profile (entered by the adult):** family name, child's
-  name, date of birth/age, gender, chosen avatar, selected skills. This data is
-  used to personalize stories. **Do not enter unnecessary personal data of children.**
+- **The adult's name — optional.** The field may be left blank or cleared
+  later. The app then shows the chosen role instead ("Mom", "Dad" or your own
+  wording). The role itself is required: it goes into the story, and relatives
+  recognise each other by it.
+- **Child profile (entered by the adult):** name, gender, chosen avatar,
+  selected skills. The name is needed so the story is about that particular
+  child — that is the whole point of the app. **Do not enter unnecessary
+  personal data about children: surname, address, school or nursery.**
+
+  We do **not** ask for or store a child's date of birth or age. A first name
+  without a surname identifies almost no one; "name + exact date of birth"
+  already does, and for a children's app that is a risk worth avoiding. The
+  reading level is set differently: by default the text uses the simplest
+  possible words, and if a story is wanted for an older child, the adult says
+  so in the special wishes field.
+
+  There is no family name either — people wrote their surname into it, and the
+  app never needed it.
 - **Created content:** story texts, illustrations, audio narration — stored so
   you can return to them.
 - **Technical data:** generation logs (time, plan, success/error status, which
   service handled it) — for limits, abuse prevention, and aggregated analytics.
-- **Device identifier:** only a one-way hash of the identifier the operating
-  system assigns to our app (ANDROID_ID on Android, identifierForVendor on iOS).
-  The identifier itself is never transmitted or stored — only the hash is matched
-  on the server. It is used
-  for one purpose only — to prevent creating an unlimited number of accounts on
-  a single phone to bypass the free limits. This is **not** a hardware number:
-  it is app-specific, resets when the device is factory reset, and cannot be
-  used to track you outside the App. We do not use it for advertising and do not
-  share it with third parties. In practice this means a limited number of family
-  accounts (two by default) can be registered from one device.
+- **Device identifier: not collected.** We used to store a one-way hash of the
+  identifier the operating system assigns to our app (ANDROID_ID on Android) so
+  that an unlimited number of accounts could not be created on a single phone
+  to bypass the free limits. We have dropped that too: Google Play rules for
+  apps with a child audience prohibit transmitting such identifiers, and
+  ANDROID_ID is named on that list explicitly. No device identifier — neither
+  raw nor hashed — is transmitted or stored any more.
 - **Purchase data:** the Google Play product identifier and purchase token, the
   subscription status and expiry date. The token is bound to your family so that
   a single paid receipt cannot be reused across several accounts. We **do not
@@ -63,7 +75,8 @@ everyone, we apply:
   account) — for this, timestamps of requests are stored for a short time;
 - counting the stories, illustrations and narrations created per day — to
   enforce the plan limit;
-- the device binding and purchase-receipt binding described above;
+- binding the purchase receipt to a family, so one purchase cannot be used
+  across several accounts;
 - automatic suspension of generation after consecutive technical failures — so
   that neither your limits nor our resources are wasted.
 
@@ -75,8 +88,10 @@ The legal basis is our legitimate interest in protecting the service from abuse
 entered by the adult, who can edit or delete it.
 3.2. We do not ask children to provide personal data themselves and do not direct
 advertising to children.
-3.3. Provide only what is necessary about a child (name, age) — that is enough for
-the stories.
+3.3. Provide only what is necessary about a child — a first name is enough for
+the stories. We do not ask for age or date of birth at all (see section 2).
+3.4. The App carries no advertising, no built-in chat, no comments and no other
+way for a child to reach strangers.
 
 ## 4. Where and how data is stored
 4.1. Data is stored in **Supabase** cloud infrastructure (database and file
@@ -104,17 +119,29 @@ the story is about them. Narration only starts when you ask for it: without
 tapping the button nothing is sent, and you can read the story or listen to it
 in the device's own voice without this transfer.
 
-We keep what is transferred to a minimum: third-party AI services receive only
-the request and scene text — no email address, no device identifier, and no link
-to a child's identity beyond what the story itself needs. Transfers are made
-under contracts with those providers that include Standard Contractual Clauses
-(SCC) or equivalent safeguards, as required by Chapter V of the GDPR and
-Articles 32-33 of Law No. 133/2011 of the Republic of Moldova.
+We keep what is transferred to a minimum, and we will say plainly what leaves:
+**the child's name is sent to the AI service that writes the story** —
+otherwise the hero could not carry that name, which is the whole point of the
+app. Along with it go the adult's wishes text, the chosen genre and the titles
+of the selected skills.
+
+What never leaves: the email address, the password, account data, any device
+identifier, purchase information. The child's name is sent without a surname,
+without a date of birth and without contacts — we do not hold the latter two at
+all. The request text alone cannot be tied back to a specific person.
+
+If you would rather the child's name never left the device, turn off
+"personal story" when creating one: the hero is then given an invented name and
+we send nothing that relates to your child personally.
+
+Transfers are made under contracts with those providers that include Standard
+Contractual Clauses (SCC) or equivalent safeguards, as required by Chapter V of
+the GDPR and Articles 32-33 of Law No. 133/2011 of the Republic of Moldova.
 
 ## 5. Third-party services (sub-processors)
-To run the App we send the **request/scene text** (without name or contacts, and
-without linking to the child's identity beyond what is necessary) to third-party
-AI services:
+To run the App we send the **request and scene text** to third-party AI
+services. That text may contain the child's name — section 4.1 sets out
+exactly what is sent and how to avoid it.
 - **Text generation:** Groq — [policy](https://groq.com/privacy-policy/).
 - **Illustration generation:** Cloudflare Workers AI —
   [policy](https://www.cloudflare.com/privacypolicy/).
@@ -132,8 +159,9 @@ AI services:
   [policy](https://policies.google.com/privacy).
 
 Each service processes data under its own privacy policy and terms of use; the
-links above lead to them. We try not to pass these services direct identity
-identifiers: we do not send them your email, device identifier or account data.
+links above lead to them. We do not pass these services direct identity
+identifiers: they receive neither your email, nor account data, nor any device
+identifier from us.
 
 This list can change: if we add another provider or drop a current one, we will
 update this section and the effective date at the top of the document.
@@ -176,9 +204,20 @@ months, we may delete the account and its data after warning you by email first.
 inaccurate data, delete it, restrict or object to processing, receive your data
 in a machine-readable form (portability), and withdraw consent previously given.
 Withdrawal does not affect the lawfulness of processing before it.
-8.2. Contact: **aistoryteller.team@gmail.com**. We reply within **30 days** at
-the latest. There is no charge for this.
-8.3. If you believe your rights have been infringed, you may lodge a complaint
+8.2. **You can get a copy of your data inside the app, without contacting us:**
+"Parents → Settings → My data". The export is produced on the device in two
+formats — PDF to read through, and JSON, machine-readable, which you can take
+to another service. It contains child profiles, every story with its full text,
+selected skills, completion marks, awards, the family roster and plan details.
+
+Deliberately excluded: the PIN hash, sign-in tokens and purchase tokens — these
+are access keys rather than information about you, and handing them out would
+be unsafe. Illustration and narration files are not bundled because of their
+size; they remain available in the app itself.
+
+8.3. For your other rights, contact **aistoryteller.team@gmail.com**. We reply
+within **30 days** at the latest. There is no charge for this.
+8.4. If you believe your rights have been infringed, you may lodge a complaint
 with a supervisory authority:
 - in the Republic of Moldova — the National Center for Personal Data Protection
   (Centrul Naţional pentru Protecţia Datelor cu Caracter Personal),
@@ -186,7 +225,7 @@ with a supervisory authority:
 - in the European Union — the data protection authority of your country of
   residence.
 
-8.4. We make **no automated decisions** producing legal or similarly significant
+8.5. We make **no automated decisions** producing legal or similarly significant
 effects for you, and we do not carry out profiling. The automation in the App
 only writes stories and counts plan limits.
 
