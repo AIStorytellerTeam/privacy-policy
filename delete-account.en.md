@@ -69,7 +69,7 @@ relatives who joined your family with the invite code are deleted as well.
   illustration cache — is removed when you uninstall the app or reset data.
 - **Database backups** held by our hosting provider (Supabase) are kept for a
   limited period and overwritten on schedule. Backups made before your deletion
-  expire with them — no later than 30 days.
+  expire with them — no longer than 7 days.
 - **Payment records** (the fact and amount of a purchase, not story content) are
   kept for as long as tax and accounting law requires. We are not permitted to
   delete these on request.
