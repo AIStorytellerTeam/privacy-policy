@@ -89,6 +89,11 @@ requests for content harmful to children. You may challenge the decision by
 writing to aistoryteller.team@gmail.com; we reply within 30 days. If a paid
 subscription was suspended through no fault of yours, the unused period is
 refunded.
+5.4. **What a restriction looks like.** The app opens on a screen stating the
+reason, with a field for your objection — the message reaches us straight from
+there, no address to look up. While the restriction is in force, registering
+again with the same email address is not possible; once it is lifted, access is
+restored together with all your stories and profiles — they are not deleted.
 
 ## 6. Intellectual property
 The App, its code, design, texts, and trademarks belong to the Rights holder.

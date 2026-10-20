@@ -83,6 +83,25 @@ everyone, we apply:
 The legal basis is our legitimate interest in protecting the service from abuse
 (Art. 6(1)(f) GDPR for users in the EU).
 
+## 2.2. Screening of request content
+This is a children's app, so the text an adult writes in the special wishes
+field is kept in a log for **90 days** and checked automatically for prohibited
+topics (violence, sexual content, drugs, self-harm, weapons, hate, cruelty). If
+such a topic is detected, the request is included in a notification to the
+administrator.
+
+What this means in practice:
+- the story itself stays child-appropriate regardless of the request — that is
+  handled by the instructions given to the AI service, not by this check;
+- no automatic refusal and no automatic suspension follow a single match: a
+  human decides, and only in cases of systematic abuse (see the Terms of
+  Service on termination of access);
+- after 90 days the record is deleted automatically.
+
+The legal basis is our legitimate interest in the safety of a child audience
+and compliance with app-store requirements for children's content
+(Art. 6(1)(f) GDPR).
+
 ## 3. Children's data
 3.1. The App is operated on the child's behalf by an adult; the child's data is
 entered by the adult, who can edit or delete it.
@@ -191,6 +210,8 @@ after which nothing remains there either.
 
 7.3. Specific retention periods for the rest:
 - anti-abuse logs (request timestamps) — up to 24 hours;
+- the text of special wishes for a story — 90 days (see section 2.2), then
+  deleted automatically;
 - generation logs (time, plan, success/error) — up to 12 months, after which
   they are anonymized and survive only as aggregate statistics;
 - purchase data — while the subscription is active and thereafter for the period
