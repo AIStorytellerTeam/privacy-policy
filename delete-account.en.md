@@ -67,7 +67,7 @@ relatives who joined your family with the invite code are deleted as well.
 ## 5. What is kept, and for how long
 - **On-device data** — sign-in tokens, the PIN hash, settings and the
   illustration cache — is removed when you uninstall the app or reset data.
-- **Database backups** held by our hosting provider (Supabase) are kept for a
+- **Database backups** held by our hosting provider are kept for a
   limited period and overwritten on schedule. Backups made before your deletion
   expire with them — no longer than 7 days.
 - **Payment records** (the fact and amount of a purchase, not story content) are

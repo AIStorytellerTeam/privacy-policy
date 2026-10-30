@@ -81,6 +81,22 @@ It is also the way to tell us about content you find inappropriate for a child.
 5.1. You may not: attempt to bypass limits, automate/mass-trigger generation,
 overload the service (flooding), extract keys/data, or use the App for illegal
 content or content harmful to children.
+5.1.1. **Prohibited generation requests.** The App creates stories for children
+aged 0–7. In the story wishes (and in any other input field) you may not ask for
+content that is: obscene, sexual, erotic or carrying adult innuendo — including
+hidden innuendo by way of double meanings, euphemisms, words in other languages
+or slang; violent, frightening, or degrading to a person or group; about
+weapons, war, drugs, alcohol, tobacco or self-harm; or unlawful or infringing
+third-party rights.
+5.1.2. Requests are stored and may be reviewed by us to check compliance with
+this clause. A request breaching 5.1.1 may be rejected automatically; repeated
+breaches lead to a restriction of access under 5.3.
+5.1.3. **You are responsible for how you word a request.** The App cannot
+reliably detect obscene meaning in every language, dialect and slang in the
+world. If you deliberately word a request so as to get around those checks and
+receive unsuitable text, responsibility for that rests with you and not with
+the Rights holder. Please report any such case with the “Report” button in the
+App (see section 11).
 5.2. We apply technical rate limits and may suspend access in case of abuse.
 5.3. **Proportionality.** Before restricting access we will normally warn you
 and give you a chance to put things right. Immediate suspension is possible for

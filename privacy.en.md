@@ -10,7 +10,7 @@ altLabel: Русский
 **App:** AI Storyteller / Fairytale Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
-**Effective date:** 2026-09-28
+**Effective date:** 2026-10-30
 
 ## 1. Who and why
 The account is created by an **adult** (parent/guardian). We process the minimum
@@ -19,8 +19,8 @@ running subscriptions.
 
 ## 2. What data we collect
 - **Adult account:** email; when signing in with Google — email and Google
-  identifier. The password is stored hashed by the authentication provider
-  (Supabase); we never see it in plain text.
+  identifier. The password is stored hashed by our authentication provider;
+  we never see it in plain text.
 - **Authentication data:** session tokens, so you are not asked to sign in on
   every launch. They are kept in the device's secure storage (Android Keystore /
   iOS Keychain) and are not shared with third parties.
@@ -113,9 +113,9 @@ the stories. We do not ask for age or date of birth at all (see section 2).
 way for a child to reach strangers.
 
 ## 4. Where and how data is stored
-4.1. Data is stored in **Supabase** cloud infrastructure (database and file
-storage). Access is restricted by security rules (RLS): a family only sees its own
-data.
+4.1. Data is stored in our hosting provider's cloud infrastructure (a managed
+database and file storage). Access is restricted by row-level security rules: a
+family only sees its own data.
 4.2. Illustrations and narration live in **private** storage. The app reaches
 them through temporary signed links valid for a limited time; the files have no
 permanent public addresses.
@@ -127,16 +127,26 @@ work offline; it is size-limited, cleaned automatically as it fills up, and
 removed entirely when you uninstall the app or reset data in settings.
 
 ## 4.1. Transfers outside the Republic of Moldova
-Some of our providers (Supabase, Groq, Cloudflare, Google, ElevenLabs,
-Yandex Cloud, Resend, Sentry) run servers in the European Union, the United
-States, Russia and other countries. This means **cross-border data transfers**.
+The App runs on third-party cloud infrastructure and third-party AI services.
+Their servers are located in the **European Union, the United States, Russia and
+other countries** — this means **cross-border data transfers**.
 
-A separate warning about narration: cloud speech synthesis is performed by
-**Yandex Cloud (Yandex SpeechKit)**, whose servers are located in Russia, and it
-receives **the full text of the story** — which may contain the child's name if
-the story is about them. Narration only starts when you ask for it: without
-tapping the button nothing is sent, and you can read the story or listen to it
-in the device's own voice without this transfer.
+We do not name individual providers in this document. The mix of services
+changes more often than the App ships a new version: models evolve and so do
+providers' processing terms, and a list written into the policy would go stale
+faster than we could update it — and a stale list is worse than honestly
+described categories. We therefore disclose the **categories of recipients, what
+data each receives, and the countries where servers are located**, as permitted
+by Art. 13(1)(e) GDPR, and we **provide the full current list of providers with
+links to their policies on request** at aistoryteller.team@gmail.com — free of
+charge, within 30 days.
+
+A separate warning about narration: cloud speech synthesis is performed by a
+provider **whose servers are located in Russia**, and it receives **the full
+text of the story** — which may contain the child's name if the story is about
+them. Narration only starts when you ask for it: without tapping the button
+nothing is sent, and you can read the story or listen to it in the device's own
+voice without this transfer.
 
 We keep what is transferred to a minimum, and we will say plainly what leaves:
 **the child's name is sent to the AI service that writes the story** —
@@ -157,33 +167,47 @@ Transfers are made under contracts with those providers that include Standard
 Contractual Clauses (SCC) or equivalent safeguards, as required by Chapter V of
 the GDPR and Articles 32-33 of Law No. 133/2011 of the Republic of Moldova.
 
-## 5. Third-party services (sub-processors)
-To run the App we send the **request and scene text** to third-party AI
-services. That text may contain the child's name — section 4.1 sets out
-exactly what is sent and how to avoid it.
-- **Text generation:** Groq — [policy](https://groq.com/privacy-policy/).
-- **Illustration generation:** Cloudflare Workers AI —
-  [policy](https://www.cloudflare.com/privacypolicy/).
-- **Cloud narration (only when you ask for it):** Yandex Cloud, SpeechKit —
-  [policy](https://yandex.cloud/en/docs/legal/confidential), servers in Russia.
-  Receives the full story text, including the hero's name.
-- **Parent-voice narration (only when you ask for it, if enabled):** ElevenLabs —
-  [policy](https://elevenlabs.io/privacy-policy). Receives an adult's voice
-  sample and the story text.
-- **Infrastructure, authentication, storage:** Supabase —
-  [policy](https://supabase.com/privacy).
-- **Crash reporting:** Sentry — [policy](https://sentry.io/privacy/).
-- **Support email:** Resend — [policy](https://resend.com/legal/privacy-policy).
-- **Payments and distribution:** Google Play (Google) —
-  [policy](https://policies.google.com/privacy).
+## 5. Categories of recipients (sub-processors)
+Below are all categories of third-party processors and what each one receives.
+The names of the specific providers are supplied on request — see section 4.1.
 
-Each service processes data under its own privacy policy and terms of use; the
-links above lead to them. We do not pass these services direct identity
-identifiers: they receive neither your email, nor account data, nor any device
-identifier from us.
+- **AI text-generation service** — the request text: the adult's wishes, the
+  chosen genre, the titles of the selected skills, and the hero's name (which
+  may be the child's name, see 4.1).
+- **AI illustration-generation service** — a text description of the scene and
+  of the characters' appearance, composed by the text model. The hero's name
+  **can** end up in that description: the model writes it, not us, and we are
+  not in a position to promise otherwise.
+- **Cloud speech-synthesis service** (only when you ask for it) — the full story
+  text, including the hero's name. Servers located in Russia, see section 4.1.
+- **Parent-voice synthesis service** (only when you ask for it, and only if the
+  feature is enabled) — an adult's voice sample and the story text.
+- **Cloud infrastructure: database, authentication, file storage** — all account
+  data and created content, as described in section 4.
+- **Crash-reporting service** — technical information about the error.
+- **Email delivery service** — the contents of your message and the address you
+  wrote from, when you send a complaint or a support request.
+- **Instant-messaging service used to alert the administrator** — an internal
+  notification about a technical failure or a complaint. It may include **your
+  account's email address**, the family identifier, the plan name and the story
+  identifier: without these we cannot tell whose generation broke, or credit you
+  stories in compensation.
+- **Google Play store (Google LLC)** — payment processing and distribution of
+  the App; [policy](https://policies.google.com/privacy). We name this provider
+  explicitly: the ability to install the App depends on it, it cannot be
+  replaced, and you enter into a contract with it yourself when you purchase.
+  Google receives payment details directly from you — we never see them.
 
-This list can change: if we add another provider or drop a current one, we will
-update this section and the effective date at the top of the document.
+We do not pass **the AI services** (the first four categories) direct identity
+identifiers: they receive neither your email address, nor account data, nor any
+device identifier from us — only the request text. The single exception is the
+administrator notification named explicitly above, which may include the email.
+
+We have a contract with each processor that includes Standard Contractual
+Clauses (SCC) or equivalent safeguards, and each also acts under its own privacy
+policy. If we change a provider within a category, the content of this section
+does not change; if a new category of recipients appears, we extend this section
+and update the effective date at the top of the document.
 
 ## 6. Legal bases
 The controller is located in the Republic of Moldova, and processing is carried
