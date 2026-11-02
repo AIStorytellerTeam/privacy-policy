@@ -1,6 +1,6 @@
 # Документы AI Storyteller
 
-Публичные юридические документы приложения **AI Storyteller / Fairy Gardens**
+Публичные юридические документы приложения **AI Storyteller: Fairy Gardens**
 (`com.unil.aistoryteller`), опубликованные через GitHub Pages.
 
 | Документ | Адрес |

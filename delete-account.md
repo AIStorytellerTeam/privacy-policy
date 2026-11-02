@@ -7,7 +7,7 @@ altLabel: English
 ---
 # Удаление аккаунта и данных
 
-**Приложение:** AI Storyteller / Fairy Gardens  
+**Приложение:** AI Storyteller: Fairy Gardens  
 **Идентификатор в Google Play:** com.unil.aistoryteller  
 **Оператор данных:** Турлаева Елена Владимировна, Республика Молдова  
 **Контакт:** aistoryteller.team@gmail.com

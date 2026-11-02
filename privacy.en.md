@@ -7,7 +7,7 @@ altLabel: Русский
 ---
 # Privacy Policy
 
-**App:** AI Storyteller / Fairy Gardens  
+**App:** AI Storyteller: Fairy Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
 **Effective date:** 2026-10-30

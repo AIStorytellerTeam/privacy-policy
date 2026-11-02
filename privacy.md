@@ -7,7 +7,7 @@ altLabel: English
 ---
 # Политика конфиденциальности (Privacy Policy)
 
-**Приложение:** AI Storyteller / Fairy Gardens  
+**Приложение:** AI Storyteller: Fairy Gardens  
 **Оператор данных:** Турлаева Елена Владимировна, Республика Молдова  
 **Контакт по данным:** aistoryteller.team@gmail.com  
 **Дата вступления в силу:** 30.10.2026

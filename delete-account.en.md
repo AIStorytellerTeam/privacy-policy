@@ -7,7 +7,7 @@ altLabel: Русский
 ---
 # Account and Data Deletion
 
-**App:** AI Storyteller / Fairy Gardens  
+**App:** AI Storyteller: Fairy Gardens  
 **Google Play package:** com.unil.aistoryteller  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Contact:** aistoryteller.team@gmail.com
