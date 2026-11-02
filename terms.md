@@ -7,7 +7,7 @@ altLabel: English
 ---
 # Пользовательское соглашение (Terms of Service)
 
-**Приложение:** AI Storyteller / Fairytale Gardens (далее — «Приложение»)  
+**Приложение:** AI Storyteller / Fairy Gardens (далее — «Приложение»)  
 **Правообладатель:** Турлаева Елена Владимировна, Республика Молдова  
 **Контакт:** aistoryteller.team@gmail.com  
 **Дата вступления в силу:** 31.08.2026
