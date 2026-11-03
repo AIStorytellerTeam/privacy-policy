@@ -20,14 +20,15 @@ children's stories for their children. The account is created and managed by an
 **adult**; children use the App under adult supervision.
 
 ## 2. Account and access
-2.1. Access requires an account (email + password or Google sign-in).
+2.1. Access requires an account. Sign-in is via Google; the App has no separate
+password.
 2.2. You are responsible for keeping your login details safe and for actions taken
 under your account.
 2.3. You confirm that you are at least 18 (or the age of majority in your country)
 and that you act as the child's parent/guardian.
 
 ## 3. Subscriptions and payment
-3.1. Some features require a paid subscription (Light, Family plans) and one-time
+3.1. Some features require a paid subscription (Light, Plus, Family plans) and one-time
 purchases. Payment is processed through **Google Play Billing**; the purchase
 contract is between you and Google under the Google Play rules.
 3.2. A subscription **auto-renews** for a similar period until you cancel it in
@@ -76,6 +77,18 @@ content is not granted.
 the story text and your reason. We review these by hand, adjust the generation
 rules where needed, and may grant bonus stories to make up for the failed ones.
 It is also the way to tell us about content you find inappropriate for a child.
+
+4.7. **Generated output is not unique.** The neural network does not reserve
+created stories for anyone: similar wishes from different families may produce
+similar or identical texts and illustrations. This is a property of the
+technology, not a fault, and not a sign that someone copied your story. The
+rights under clause 4.5 apply to the copy of the content created in your account;
+they do not grant exclusive rights to a plot, an idea, or coinciding fragments.
+4.8. **The App does not replace a professional.** Stories, skills, values, the
+growth tree and achievements are for entertainment and development. They are not
+pedagogical, psychological, medical or other professional advice, and not an
+assessment of your child's development. Decisions about health, upbringing and
+education are yours to make, and you should consult a specialist where needed.
 
 ## 5. Acceptable use
 5.1. You may not: attempt to bypass limits, automate/mass-trigger generation,
