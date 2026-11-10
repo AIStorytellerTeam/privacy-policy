@@ -10,7 +10,7 @@ altLabel: Русский
 **App:** AI Storyteller: Fairy Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
-**Effective date:** 2026-10-30
+**Effective date:** 2026-11-10
 
 ## 1. Who and why
 The account is created by an **adult** (parent/guardian). We process the minimum
@@ -104,7 +104,11 @@ and compliance with app-store requirements for children's content
 
 ## 3. Children's data
 3.1. The App is operated on the child's behalf by an adult; the child's data is
-entered by the adult, who can edit or delete it.
+entered by the adult, who can edit or delete it. The App is intended for
+children under 14, so consent to processing their data is given by a parent or
+other legal representative: the adult who creates the child's profile
+(Art. 8 of Moldovan Law No. 195/2024). Consent can be withdrawn at any time by
+deleting the child's profile.
 3.2. We do not ask children to provide personal data themselves and do not direct
 advertising to children.
 3.3. Provide only what is necessary about a child — a first name is enough for
@@ -128,8 +132,8 @@ removed entirely when you uninstall the app or reset data in settings.
 
 ## 4.1. Transfers outside the Republic of Moldova
 The App runs on third-party cloud infrastructure and third-party AI services.
-Their servers are located in the **European Union, the United States, Russia and
-other countries** — this means **cross-border data transfers**.
+Their servers are located in the **European Union, the United States and other
+countries** — this means **cross-border data transfers**.
 
 We do not name individual providers in this document. The mix of services
 changes more often than the App ships a new version: models evolve and so do
@@ -141,12 +145,11 @@ by Art. 13(1)(e) GDPR, and we **provide the full current list of providers with
 links to their policies on request** at aistoryteller.team@gmail.com — free of
 charge, within 30 days.
 
-A separate warning about narration: cloud speech synthesis is performed by a
-provider **whose servers are located in Russia**, and it receives **the full
+A separate warning about narration: cloud speech synthesis receives **the full
 text of the story** — which may contain the child's name if the story is about
-them. Narration only starts when you ask for it: without tapping the button
-nothing is sent, and you can read the story or listen to it in the device's own
-voice without this transfer.
+them. It is the largest transfer we make, so it happens **only when you ask for
+it**: without tapping the button nothing is sent, and you can read the story or
+listen to it in the device's own voice without this transfer at all.
 
 We keep what is transferred to a minimum, and we will say plainly what leaves:
 **the child's name is sent to the AI service that writes the story** —
@@ -165,7 +168,8 @@ we send nothing that relates to your child personally.
 
 Transfers are made under contracts with those providers that include Standard
 Contractual Clauses (SCC) or equivalent safeguards, as required by Chapter V of
-the GDPR and Articles 32-33 of Law No. 133/2011 of the Republic of Moldova.
+the GDPR and Law No. 195/2024 of the Republic of Moldova on Personal Data
+Protection.
 
 ## 5. Categories of recipients (sub-processors)
 Below are all categories of third-party processors and what each one receives.
@@ -179,7 +183,7 @@ The names of the specific providers are supplied on request — see section 4.1.
   **can** end up in that description: the model writes it, not us, and we are
   not in a position to promise otherwise.
 - **Cloud speech-synthesis service** (only when you ask for it) — the full story
-  text, including the hero's name. Servers located in Russia, see section 4.1.
+  text, including the hero's name. See section 4.1.
 - **Parent-voice synthesis service** (only when you ask for it, and only if the
   feature is enabled) — an adult's voice sample and the story text.
 - **Cloud infrastructure: database, authentication, file storage** — all account
@@ -211,8 +215,8 @@ and update the effective date at the top of the document.
 
 ## 6. Legal bases
 The controller is located in the Republic of Moldova, and processing is carried
-out in accordance with Law No. 133/2011 of the Republic of Moldova on the
-Protection of Personal Data. For users in the European Union we also rely on the
+out in accordance with Law No. 195/2024 of the Republic of Moldova on Personal
+Data Protection (in force since 23 August 2026). For users in the European Union we also rely on the
 GDPR.
 Grounds for processing: performance of the contract (providing the App's
 features), consent (where applicable) and our legitimate interests (security,
@@ -233,7 +237,7 @@ Infrastructure backups are overwritten on the provider's cycle (up to 7 days),
 after which nothing remains there either.
 
 7.3. Specific retention periods for the rest:
-- anti-abuse logs (request timestamps) — up to 24 hours;
+- anti-abuse logs (request timestamps) — up to 24 hours; the family's illustration-redraw counter — up to 30 days;
 - the text of special wishes for a story — 90 days (see section 2.2), then
   deleted automatically;
 - generation logs (time, plan, success/error) — up to 12 months, after which
