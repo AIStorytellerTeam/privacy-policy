@@ -10,7 +10,7 @@ altLabel: Русский
 **App:** AI Storyteller: Fairy Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
-**Effective date:** 2026-11-10
+**Effective date:** 2026-11-17
 
 ## 1. Who and why
 The account is created by an **adult** (parent/guardian). We process the minimum
@@ -52,13 +52,17 @@ running subscriptions.
   you can return to them.
 - **Technical data:** generation logs (time, plan, success/error status, which
   service handled it) — for limits, abuse prevention, and aggregated analytics.
-- **Device identifier: not collected.** We used to store a one-way hash of the
-  identifier the operating system assigns to our app (ANDROID_ID on Android) so
-  that an unlimited number of accounts could not be created on a single phone
-  to bypass the free limits. We have dropped that too: Google Play rules for
-  apps with a child audience prohibit transmitting such identifiers, and
-  ANDROID_ID is named on that list explicitly. No device identifier — neither
-  raw nor hashed — is transmitted or stored any more.
+- **A hash of the device identifier — only to protect the free stories.**
+  On Android the app takes the identifier the operating system assigns to our
+  app specifically (ANDROID_ID) and **sends not the identifier itself but a
+  one-way hash of it** (SHA-256); on the server it is hashed once more. Its only
+  purpose: the free starter stories are granted once per phone, not to every new
+  account created on it. The hash is stored separately from the account, the
+  family and the email — the only thing kept next to it is the number of free
+  stories already used, so the record cannot be linked to a person. The
+  ANDROID_ID itself never leaves the device, and other apps cannot match us by
+  it, because every app gets its own. We **do not collect** the advertising ID
+  (AAID), IMEI, serial numbers, MAC address or other hardware identifiers.
 - **Purchase data:** the Google Play product identifier and purchase token, the
   subscription status and expiry date. The token is bound to your family so that
   a single paid receipt cannot be reused across several accounts. We **do not
