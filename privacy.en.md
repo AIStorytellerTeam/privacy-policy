@@ -10,7 +10,7 @@ altLabel: Русский
 **App:** AI Storyteller: Fairy Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
-**Effective date:** 2026-11-17
+**Effective date:** 2026-11-20
 
 ## 1. Who and why
 The account is created by an **adult** (parent/guardian). We process the minimum
@@ -18,9 +18,9 @@ data needed to run the App: creating stories, storing the family library, and
 running subscriptions.
 
 ## 2. What data we collect
-- **Adult account:** email; when signing in with Google — email and Google
-  identifier. The password is stored hashed by our authentication provider;
-  we never see it in plain text.
+- **Adult account:** sign-in is via Google — we receive the email address and
+  the Google account identifier. The App has no separate password, and we never
+  see your Google password.
 - **Authentication data:** session tokens, so you are not asked to sign in on
   every launch. They are kept in the device's secure storage (Android Keystore /
   iOS Keychain) and are not shared with third parties.
@@ -59,7 +59,10 @@ running subscriptions.
   purpose: the free starter stories are granted once per phone, not to every new
   account created on it. The hash is stored separately from the account, the
   family and the email — the only thing kept next to it is the number of free
-  stories already used, so the record cannot be linked to a person. The
+  stories already used, so the record cannot be linked to a person. For the
+  same reason a **hash of the email address** (SHA-256, without the address
+  itself) is kept with the same counter: otherwise the starter set could be
+  claimed again by deleting the account and signing up with the same email. The
   ANDROID_ID itself never leaves the device, and other apps cannot match us by
   it, because every app gets its own. We **do not collect** the advertising ID
   (AAID), IMEI, serial numbers, MAC address or other hardware identifiers.
@@ -97,8 +100,12 @@ administrator.
 What this means in practice:
 - the story itself stays child-appropriate regardless of the request — that is
   handled by the instructions given to the AI service, not by this check;
-- no automatic refusal and no automatic suspension follow a single match: a
-  human decides, and only in cases of systematic abuse (see the Terms of
+- for a narrow set of topics that cannot be read innocently (for example,
+  substance use or actions dangerous to imitate), a story is **automatically
+  not created** for such a request: the App says right away what is wrong, and
+  no limit is used up;
+- **no automatic account suspension** takes place: restricting access is
+  decided by a human, and only in cases of systematic abuse (see the Terms of
   Service on termination of access);
 - after 90 days the record is deleted automatically.
 
@@ -129,10 +136,12 @@ them through temporary signed links valid for a limited time; the files have no
 permanent public addresses.
 4.3. Third-party service secret keys are kept on the server and never sent to the app.
 4.4. **On your device** the app keeps: sign-in credentials (in the operating
-system's secure storage), the PIN hash, your settings, and a cache of
-illustrations you have already seen. The cache makes a story open quickly and
-work offline; it is size-limited, cleaned automatically as it fills up, and
-removed entirely when you uninstall the app or reset data in settings.
+system's secure storage), the PIN hash, your settings, a cache of
+illustrations you have already seen, and **a copy of the family's data for
+offline use** — children's profiles, stories, skill marks and awards. The
+illustration cache is size-limited and cleaned automatically as it fills up.
+The data copy is erased when you sign out. All of it is removed entirely when
+you uninstall the app or reset data in settings.
 
 ## 4.1. Transfers outside the Republic of Moldova
 The App runs on third-party cloud infrastructure and third-party AI services.
@@ -161,8 +170,9 @@ otherwise the hero could not carry that name, which is the whole point of the
 app. Along with it go the adult's wishes text, the chosen genre and the titles
 of the selected skills.
 
-What never leaves: the email address, the password, account data, any device
-identifier, purchase information. The child's name is sent without a surname,
+What never leaves: the email address, account data, any device identifier
+(the hash from section 2 stays with us and is not passed to AI services),
+purchase information. The child's name is sent without a surname,
 without a date of birth and without contacts — we do not hold the latter two at
 all. The request text alone cannot be tied back to a specific person.
 
@@ -181,7 +191,8 @@ The names of the specific providers are supplied on request — see section 4.1.
 
 - **AI text-generation service** — the request text: the adult's wishes, the
   chosen genre, the titles of the selected skills, and the hero's name (which
-  may be the child's name, see 4.1).
+  may be the child's name, see 4.1). If you continue a story — also a short
+  summary of the previous one; if you tap "Translate" — the full story text.
 - **AI illustration-generation service** — a text description of the scene and
   of the characters' appearance, composed by the text model. The hero's name
   **can** end up in that description: the model writes it, not us, and we are
@@ -236,9 +247,15 @@ immediately, with no waiting period. Deleted are:
 - every file in storage — illustrations and narration;
 - the account itself, including the email address.
 
-After that the data cannot be restored — neither by you nor by us.
-Infrastructure backups are overwritten on the provider's cycle (up to 7 days),
+After that the data cannot be restored through the App — neither by you nor by
+us. Infrastructure backups are overwritten on the provider's cycle (up to 7 days),
 after which nothing remains there either.
+
+**What stays after deletion.** The email hash and the device-identifier hash
+with the counter of used free stories (section 2) are not deleted: otherwise
+deleting the account would become a way to claim the free set again. Neither
+the email nor the identifier can be recovered from these records, and they
+contain no name, no stories and no children's data.
 
 7.3. Specific retention periods for the rest:
 - anti-abuse logs (request timestamps) — up to 24 hours; the family's illustration-redraw counter — up to 30 days;
@@ -246,6 +263,8 @@ after which nothing remains there either.
   deleted automatically;
 - generation logs (time, plan, success/error) — up to 12 months, after which
   they are anonymized and survive only as aggregate statistics;
+- email and device-identifier hashes with the free-story counter —
+  indefinitely (see 7.2);
 - purchase data — while the subscription is active and thereafter for the period
   required by Google Play rules and tax law.
 
