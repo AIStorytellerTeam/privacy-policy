@@ -20,6 +20,12 @@ Google Play: `com.unil.aistoryteller`
 - [Terms of Service]({{ '/terms/en/' | relative_url }})
 - [Account and Data Deletion]({{ '/delete-account/en/' | relative_url }})
 
+## Română
+
+- [Politica de confidențialitate]({{ '/privacy/ro/' | relative_url }})
+- [Termeni de utilizare]({{ '/terms/ro/' | relative_url }})
+- [Ștergerea contului și a datelor]({{ '/delete-account/ro/' | relative_url }})
+
 ---
 
 По любым вопросам о данных: **aistoryteller.team@gmail.com**

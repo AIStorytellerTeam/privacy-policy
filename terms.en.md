@@ -50,6 +50,9 @@ we will review the request ourselves.
 3.7. **What happens to your stories when a subscription ends.** Stories,
 illustrations and narration you already created stay in your library and remain
 readable. Only new generation is restricted — down to the free plan's limits.
+3.8. **Ads on the free plan.** On the free plan the App may offer a short video
+ad while a story is being created. The video plays only if the adult chooses to
+watch it; the children's area has no ads. Details are in the Privacy Policy.
 
 ## 4. How content works (important)
 4.1. Stories, illustrations, and narration are created using **third-party
