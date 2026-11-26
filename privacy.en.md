@@ -10,7 +10,7 @@ altLabel: Русский
 **App:** AI Storyteller: Fairy Gardens  
 **Data controller:** Turlaeva Elena Vladimirovna, Republic of Moldova  
 **Data contact:** aistoryteller.team@gmail.com  
-**Effective date:** 2026-11-20
+**Effective date:** 2026-11-26
 
 ## 1. Who and why
 The account is created by an **adult** (parent/guardian). We process the minimum
@@ -71,6 +71,29 @@ running subscriptions.
   a single paid receipt cannot be reused across several accounts. We **do not
   receive or store** card numbers or any other payment credentials — payment is
   handled entirely by Google Play.
+- **Ads — on the free plan only, and only at the adult's choice.** When the
+  adult creates a story in the parent area (it is protected by a PIN), the App
+  offers to watch a short video while the story is being written. The video
+  starts only if the adult taps "Watch" themselves. The children's area has no
+  ads. Videos are served by the **Google AdMob** ad network (Google LLC, see
+  section 5).
+
+  Every ad request is tagged as child-directed and as coming from a user under
+  the age of consent. The ads are therefore **non-personalized**: Google does not
+  select them based on activity history and does not build an advertising
+  profile, and content is limited to the "general audiences" (G) rating. The App
+  does not request the advertising ID (AAID): that permission is blocked in it.
+
+  To show a video, Google receives technical data: IP address, device model and
+  OS version, language, app information, the app set ID, and information about
+  the ad view and taps. Google uses it to deliver ads, count views and prevent
+  fraud, under its own [policy](https://policies.google.com/technologies/ads).
+  The ad network receives **no** account data, email, children's names or story
+  texts from us.
+
+  Legal basis: our legitimate interest, as ads pay for the free stories
+  (Art. 6(1)(f) GDPR). You can always decline the video: tap "Cancel" (the free
+  story is then not created) or switch to a paid plan, which has no ads.
 
 We do **not** collect location or contacts, do not show personalized ads, and do
 not sell data.
@@ -120,12 +143,13 @@ children under 14, so consent to processing their data is given by a parent or
 other legal representative: the adult who creates the child's profile
 (Art. 8 of Moldovan Law No. 195/2024). Consent can be withdrawn at any time by
 deleting the child's profile.
-3.2. We do not ask children to provide personal data themselves and do not direct
-advertising to children.
+3.2. We do not ask children to provide personal data themselves. Ads are shown
+only to the adult in the parent area and only at their choice (see section 2);
+the children's area contains no ads.
 3.3. Provide only what is necessary about a child — a first name is enough for
 the stories. We do not ask for age or date of birth at all (see section 2).
-3.4. The App carries no advertising, no built-in chat, no comments and no other
-way for a child to reach strangers.
+3.4. The children's area has no advertising, no built-in chat, no comments and
+no other way for a child to reach strangers.
 
 ## 4. Where and how data is stored
 4.1. Data is stored in our hosting provider's cloud infrastructure (a managed
@@ -170,7 +194,7 @@ otherwise the hero could not carry that name, which is the whole point of the
 app. Along with it go the adult's wishes text, the chosen genre and the titles
 of the selected skills.
 
-What never leaves: the email address, account data, any device identifier
+What is never sent to AI services: the email address, account data, any device identifier
 (the hash from section 2 stays with us and is not passed to AI services),
 purchase information. The child's name is sent without a surname,
 without a date of birth and without contacts — we do not hold the latter two at
@@ -216,6 +240,13 @@ The names of the specific providers are supplied on request — see section 4.1.
   explicitly: the ability to install the App depends on it, it cannot be
   replaced, and you enter into a contract with it yourself when you purchase.
   Google receives payment details directly from you — we never see them.
+- **Google AdMob ad network (Google LLC)** — on the free plan only, and only when
+  the adult agreed to watch a video: the technical device data and ad-view
+  information listed in section 2. Ads are non-personalized and requests are
+  tagged as child-directed;
+  [how Google uses this data](https://policies.google.com/technologies/partner-sites).
+  We name this provider explicitly as well: it receives the data directly from
+  the device, not from our server.
 
 We do not pass **the AI services** (the first four categories) direct identity
 identifiers: they receive neither your email address, nor account data, nor any
@@ -266,7 +297,9 @@ contain no name, no stories and no children's data.
 - email and device-identifier hashes with the free-story counter —
   indefinitely (see 7.2);
 - purchase data — while the subscription is active and thereafter for the period
-  required by Google Play rules and tax law.
+  required by Google Play rules and tax law;
+- data received by the Google AdMob ad network — retention is set by Google
+  under its own policy; we do not store this data.
 
 7.4. If you simply stop using the App and do not sign in for more than 24
 months, we may delete the account and its data after warning you by email first.
