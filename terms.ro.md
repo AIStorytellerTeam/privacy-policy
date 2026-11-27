@@ -55,7 +55,9 @@ gratuit.
 3.8. **Reclama în abonamentul gratuit.** În abonamentul gratuit, Aplicația poate
 propune vizionarea unui scurt clip publicitar cât se creează povestea. Clipul
 pornește doar dacă adultul alege să-l vizioneze; în secțiunea copilului nu există
-reclame. Detalii — în Politica de confidențialitate.
+reclame. Tot în schimbul unui clip se poate debloca narațiunea propriei povești cu
+vocea Studio (cel mult două pe zi); propunerea apare doar după codul PIN al
+părintelui sau o verificare pentru adulți. Detalii — în Politica de confidențialitate.
 
 ## 4. Cum funcționează conținutul (important)
 4.1. Poveștile, ilustrațiile și narațiunea sunt create cu ajutorul **unor servicii

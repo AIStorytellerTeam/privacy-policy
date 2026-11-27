@@ -77,6 +77,12 @@ bibliotecii familiei și funcționarea abonamentului.
   reclame. Clipurile sunt afișate de rețeaua publicitară **Google AdMob** (Google LLC,
   vezi secțiunea 5).
 
+  Al doilea caz este narațiunea propriei povești cu vocea Studio în schimbul unui
+  clip (cel mult două pe zi). Vocea se alege în setările de lectură, dar propunerea
+  de a viziona clipul apare doar după verificarea că este un adult: introducerea
+  codului PIN al părintelui sau, dacă PIN-ul nu este setat, tastarea unui număr
+  scris în cuvinte. Copilul nu poate porni singur clipul.
+
   Fiecare cerere de reclamă este marcată ca fiind destinată copiilor și ca venind de
   la un utilizator sub vârsta consimțământului. De aceea reclama este
   **nepersonalizată**: Google nu o alege după istoricul acțiunilor și nu construiește
@@ -147,8 +153,8 @@ părintele sau alt reprezentant legal — adultul care creează profilul copilul
 (art. 8 din Legea Republicii Moldova nr. 195/2024). Consimțământul poate fi retras
 oricând, ștergând profilul copilului.
 3.2. Nu le cerem copiilor să furnizeze singuri date personale. Reclama este afișată
-doar adultului în secțiunea pentru părinți și doar la alegerea lui (vezi secțiunea
-2); secțiunea copilului nu conține reclame.
+doar adultului (în secțiunea pentru părinți sau după codul PIN / o verificare pentru
+adulți) și doar la alegerea lui (vezi secțiunea 2); secțiunea copilului nu conține reclame.
 3.3. Introduceți despre copil doar ce este necesar — prenumele este suficient pentru
 povești. Vârsta și data nașterii nu le cerem deloc (vezi secțiunea 2).
 3.4. În secțiunea copilului nu există reclame, chat-uri încorporate, comentarii și nicio

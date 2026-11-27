@@ -52,7 +52,10 @@ illustrations and narration you already created stay in your library and remain
 readable. Only new generation is restricted — down to the free plan's limits.
 3.8. **Ads on the free plan.** On the free plan the App may offer a short video
 ad while a story is being created. The video plays only if the adult chooses to
-watch it; the children's area has no ads. Details are in the Privacy Policy.
+watch it; the children's area has no ads. In the same way, a video can unlock
+studio-voice narration of your own story (no more than two a day); this offer
+appears only after the parent PIN or an adult check. Details are in the Privacy
+Policy.
 
 ## 4. How content works (important)
 4.1. Stories, illustrations, and narration are created using **third-party

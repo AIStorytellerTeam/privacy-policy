@@ -78,6 +78,12 @@ running subscriptions.
   ads. Videos are served by the **Google AdMob** ad network (Google LLC, see
   section 5).
 
+  The second case is narrating your own story with a studio voice in exchange
+  for a video (no more than two a day). The voice is picked in the reading
+  settings, but the offer to watch a video appears only after a check that an
+  adult is present: entering the parent PIN or, if no PIN is set, typing a
+  number written out in words. A child cannot start the video on their own.
+
   Every ad request is tagged as child-directed and as coming from a user under
   the age of consent. The ads are therefore **non-personalized**: Google does not
   select them based on activity history and does not build an advertising
@@ -144,7 +150,8 @@ other legal representative: the adult who creates the child's profile
 (Art. 8 of Moldovan Law No. 195/2024). Consent can be withdrawn at any time by
 deleting the child's profile.
 3.2. We do not ask children to provide personal data themselves. Ads are shown
-only to the adult in the parent area and only at their choice (see section 2);
+only to the adult (in the parent area or after the PIN / an adult check) and only
+at their choice (see section 2);
 the children's area contains no ads.
 3.3. Provide only what is necessary about a child — a first name is enough for
 the stories. We do not ask for age or date of birth at all (see section 2).
